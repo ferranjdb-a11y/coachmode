@@ -1,0 +1,25 @@
+{
+  "name": "Coach Mode",
+  "short_name": "Coach",
+  "description": "Coach Mode - Golf, Hockey y Gym",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0B0F19",
+  "background_color": "#0B0F19",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

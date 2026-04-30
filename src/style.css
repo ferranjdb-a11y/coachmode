@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #020617;
+  min-height: 100dvh;
+  overscroll-behavior: none;
+}
+
+.app-shell {
+  padding-top: 12px;
+  padding-bottom: 96px;
+}
+
+.app-topbar {
+  top: 0;
+}
+
+.bottom-nav-safe {
+  bottom: 16px;
+}
+
+@supports (padding-top: env(safe-area-inset-top)) {
+  .app-shell {
+    padding-top: calc(env(safe-area-inset-top) + 12px);
+    padding-bottom: calc(env(safe-area-inset-bottom) + 96px);
+  }
+
+  .app-topbar {
+    top: env(safe-area-inset-top);
+  }
+
+  .bottom-nav-safe {
+    bottom: calc(env(safe-area-inset-bottom) + 16px);
+  }
+}
